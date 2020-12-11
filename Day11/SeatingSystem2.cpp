@@ -17,18 +17,17 @@ int main() {
       for (int j = 0; j < m; j++) if (grid[i][j] != '.') {
         int empty = 0, occupied = 0;
         vector<int> dx{-1, 0, 1, 0, -1, 1, -1, 1}, dy{0, 1, 0, -1, -1, 1, 1, -1};
-        vector<bool> seen(8);
-        for (int x = 1; x <= n; x++) {
-          for (int k = 0; k < 8; k++) if (!seen[k]) {
-            int nx = i + x * dx[k], ny = j + x * dy[k];
-            if (nx >= 0 && nx < n && ny >= 0 && ny < m) {
-              if (grid[nx][ny] != '.')
-                seen[k] = true;
-              if (grid[nx][ny] == 'L')
-                ++empty;
-              else if (grid[nx][ny] == '#')
-                ++occupied;
-            }
+        for (int k = 0; k < 8; k++) {
+          int nx = i + dx[k], ny = j + dy[k];
+          while (nx >= 0 && nx < n && ny >= 0 && ny < m && grid[nx][ny] == '.') {
+            nx = nx + dx[k];
+            ny = ny + dy[k];
+          }
+          if (nx >= 0 && nx < n && ny >= 0 && ny < m) {
+            if (grid[nx][ny] == 'L')
+              ++empty;
+            else if (grid[nx][ny] == '#')
+              ++occupied;
           }
         }
         if (grid[i][j] == 'L') {
