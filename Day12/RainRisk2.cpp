@@ -4,7 +4,7 @@ using namespace std;
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(0);
-  freopen("RainRiskIn2.txt", "r", stdin);
+  freopen("RainRiskIn.txt", "r", stdin);
   string s;
   int x = 0, y = 0, nx = 10, ny = 1;
   vector<pair<int, int>> moves = {

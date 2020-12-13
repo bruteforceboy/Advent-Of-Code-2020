@@ -66,7 +66,7 @@ bool isValid(vector<string>& words) {
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(0);
-  freopen("PassportProcessingIn2.txt", "r", stdin);
+  freopen("PassportProcessingIn.txt", "r", stdin);
   char c;
   string text;
   vector<string> words;

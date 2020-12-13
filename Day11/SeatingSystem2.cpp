@@ -4,7 +4,7 @@ using namespace std;
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(0);
-  freopen("SeatingSystemIn2.txt", "r", stdin);
+  freopen("SeatingSystemIn.txt", "r", stdin);
   vector<string> grid;
   string s;
   while (cin >> s) {

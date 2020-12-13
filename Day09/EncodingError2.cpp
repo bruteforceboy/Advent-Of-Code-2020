@@ -4,7 +4,7 @@ using namespace std;
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(0);
-  freopen("EncodingErrorIn2.txt", "r", stdin);
+  freopen("EncodingErrorIn.txt", "r", stdin);
   int n;
   vector<long long> nums;
   while (cin >> n) {

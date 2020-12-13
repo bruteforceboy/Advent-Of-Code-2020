@@ -4,7 +4,7 @@ using namespace std;
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(0);
-  freopen("TobogganTrajectoryIn2.txt", "r", stdin);
+  freopen("TobogganTrajectoryIn.txt", "r", stdin);
   string s;
   vector<string> grid;
   while (getline(cin, s)) {

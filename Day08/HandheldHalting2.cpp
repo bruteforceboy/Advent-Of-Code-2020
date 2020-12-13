@@ -4,7 +4,7 @@ using namespace std;
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(0);
-  freopen("HandheldHaltingIn2.txt", "r", stdin);
+  freopen("HandheldHaltingIn.txt", "r", stdin);
   string s;
   vector<pair<string, pair<char, int>>> commands;
   while (cin >> s) {

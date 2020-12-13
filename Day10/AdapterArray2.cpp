@@ -4,7 +4,7 @@ using namespace std;
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(0);
-  freopen("AdapterArrayIn2.txt", "r", stdin);
+  freopen("AdapterArrayIn.txt", "r", stdin);
   int n;
   int mx = 0;
   map<int, bool> mp;

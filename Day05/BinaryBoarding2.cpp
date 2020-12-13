@@ -4,7 +4,7 @@ using namespace std;
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(0);
-  freopen("BinaryBoardingIn2.txt", "r", stdin);
+  freopen("BinaryBoardingIn.txt", "r", stdin);
   string s;
   auto binSearch = [&](int lo, int hi, string str) {
     int idx = 0;
