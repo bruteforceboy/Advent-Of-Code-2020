@@ -4,7 +4,7 @@ using namespace std;
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(0);
-  freopen("PasswordPhilosophyIn2.txt", "r", stdin);
+  freopen("PasswordPhilosophyIn.txt", "r", stdin);
   string s;
   int result = 0;
   while (getline(cin, s)) {

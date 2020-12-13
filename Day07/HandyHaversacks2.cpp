@@ -4,7 +4,7 @@ using namespace std;
 int main() {
   ios::sync_with_stdio(false);
   cin.tie(0);
-  freopen("HandyHaversacksIn2.txt", "r", stdin);
+  freopen("HandyHaversacksIn.txt", "r", stdin);
   string s;
   map<string, vector<pair<string, int>>> graph;
   while (cin >> s) {
